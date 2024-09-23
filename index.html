@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkConnector</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/css/bootstrap.min.css"
+    />
+    <style>
+      /* 基础样式 */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f1f1f1;
+        margin: 0;
+      }
+      .sidebar {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 150px;
+        background: rgba(52, 58, 64, 0.8);
+        backdrop-filter: blur(10px);
+        padding-top: 20px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .sidebar a {
+        color: white;
+        padding: 15px;
+        text-decoration: none;
+        display: block;
+        border-radius: 8px;
+        margin: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+      .sidebar a:hover {
+        background-color: rgba(0, 123, 255, 0.7);
+        transform: translateX(5px);
+      }
+      .content {
+        margin-left: 220px;
+        padding: 30px;
+      }
+      .card {
+        background-color: white;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        transition: transform 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+      }
+      .card-header {
+        background-color: #007bff;
+        color: white;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 16px 16px 0 0;
+      }
+      .card-body {
+        padding: 15px;
+      }
+      .card-body a {
+        color: #007bff;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 8px;
+        transition: background-color 0.3s;
+      }
+      .card-body a:hover {
+        background-color: #f1f5ff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 左侧侧边栏 -->
+    <div class="sidebar">
+      <a href="index.html">首页</a>
+      <a href="android.html">Android</a>
+      <a href="windows.html">Windows</a>
+      <a href="sysimg.html">系统镜像</a>
+    </div>
+
+    <!-- 右侧内容区域 -->
+    <div class="content">
+      <h1>LinkConnector - 首页</h1>
+      <p>欢迎来到 LinkConnector 软件链接收集平台。通过侧边栏选择您感兴趣的分类，查看各种软件的链接资源。</p>
+
+      <!-- 示例卡片展示 -->
+      <div class="card">
+        <div class="card-header">热门工具</div>
+        <div class="card-body">
+          <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
+          <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA</a>
+          <a href="https://www.eclipse.org/" target="_blank">Eclipse</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">设计工具</div>
+        <div class="card-body">
+          <a href="https://www.adobe.com/products/photoshop.html" target="_blank">Adobe Photoshop</a>
+          <a href="https://www.figma.com/" target="_blank">Figma</a>
+        </div>
+      </div>
+
+      <!-- Android 适用软件卡片 -->
+      <div class="card">
+        <div class="card-header">安卓适用软件</div>
+        <div class="card-body">
+          <a href="https://apkpure.com/" target="_blank">APKPure</a>
+          <a href="https://www.xender.com/" target="_blank">Xender</a>
+          <a href="https://www.esfileexplorer.com/" target="_blank">ES File Explorer</a>
+        </div>
+      </div>
+
+      <!-- 系统镜像卡片 -->
+      <div class="card">
+        <div class="card-header">系统镜像</div>
+        <div class="card-body">
+          <a href="https://www.ubuntu.com/download/desktop" target="_blank">Ubuntu 镜像下载</a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#windowsModal">Windows 10 镜像下载</a>
+          <a href="https://getfedora.org/" target="_blank">Fedora 镜像下载</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 模态框 -->
+    <div
+      class="modal fade"
+      id="windowsModal"
+      tabindex="-1"
+      aria-labelledby="windowsModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="windowsModalLabel">Windows 10 镜像下载</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>链接: <code>ed2k://|file|cn_windows_10_business_editions_version_1909_updated_jan_2020_x64_dvd_b3e1f3a6.iso|5311711232|3527D2A9845FF4105F485CC364655B66|/</code></p>
+            <p>提示: 只能迅雷下载。</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              关闭
+            </button>
+            <a
+              href="https://www.xunlei.com/"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              下载迅雷
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

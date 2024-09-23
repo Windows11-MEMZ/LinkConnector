@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkConnector - Windows 软件</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f1f1f1;
+        margin: 0;
+      }
+      .sidebar {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 150px; /* 设置为150px */
+        background: rgba(52, 58, 64, 0.8);
+        backdrop-filter: blur(10px);
+        padding-top: 20px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .sidebar a {
+        color: white;
+        padding: 15px;
+        text-decoration: none;
+        display: block;
+        border-radius: 8px;
+        margin: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+      .sidebar a:hover {
+        background-color: rgba(0, 123, 255, 0.7);
+        transform: translateX(5px);
+      }
+      .content {
+        margin-left: 160px; /* 调整内容区域的边距 */
+        padding: 30px;
+      }
+      .card {
+        background-color: white;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        transition: transform 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+      }
+      .card-header {
+        background-color: #007bff;
+        color: white;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 16px 16px 0 0;
+      }
+      .card-body {
+        padding: 15px;
+      }
+      .card-body a {
+        color: #007bff;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 8px;
+        transition: background-color 0.3s;
+      }
+      .card-body a:hover {
+        background-color: #f1f5ff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 左侧侧边栏 -->
+    <div class="sidebar">
+      <a href="index.html">首页</a>
+      <a href="android.html">Android</a>
+      <a href="windows.html">Windows</a>
+      <a href="sysimg.html">系统镜像</a>
+    </div>
+
+    <!-- 右侧内容区域 -->
+    <div class="content">
+      <h1>LinkConnector - Windows 软件</h1>
+      <p>这里是适用于 Windows 系统的软件集合。</p>
+
+      <!-- Windows 小工具卡片 -->
+      <div class="card">
+        <div class="card-header">常用小工具</div>
+        <div class="card-body">
+          <a href="https://www.ccleaner.com/" target="_blank">CCleaner</a>
+          <a href="https://anydesk.com.cn/zhs" target="_blank">AnyDesk</a>
+          <a href="https://www.videolan.org/vlc/index.zh_CN.html" target="_blank">VLC Media Player</a>
+          <a href="https://www.winscp.net/" target="_blank">WinSCP</a>
+        </div>
+      </div>
+
+      <!-- 文件管理与压缩卡片 -->
+      <div class="card">
+        <div class="card-header">文件管理与压缩</div>
+        <div class="card-body">
+          <a href="https://www.7-zip.org/" target="_blank">7-Zip</a>
+          <a href="https://www.winrar.com/" target="_blank">WinRAR</a>
+          <a href="https://www.bandisoft.com/bandizip/" target="_blank">Bandizip</a>
+        </div>
+      </div>
+
+      <!-- 浏览器模块 -->
+      <div class="card">
+        <div class="card-header">浏览器</div>
+        <div class="card-body">
+          <a href="https://brave.com/" target="_blank">Brave</a>
+          <a href="https://ungoogled-software.github.io/ungoogled-chromium-wiki/faq.html" target="_blank">Ungoogled Chromium</a>
+        </div>
+      </div>
+
+      <!-- Office&Windows工具模块 -->
+      <div class="card">
+        <div class="card-header">Office&Windows工具</div>
+        <div class="card-body">
+          <a href="https://otp.landian.vip/zh-cn/" target="_blank">Office Tool Plus</a>
+          <a href="https://kms.cangshui.net" target="_blank">沧水 KMS 激活工具</a>
+          <a href="https://www.revouninstaller.com/zh" target="_blank">Revo Uninstaller</a>
+          <a href="https://www.macrium.com/reflectfree" target="_blank">Macrium Reflect</a>
+          <a href="https://www.bleepingcomputer.com/download/adwcleaner/" target="_blank">AdwCleaner</a>
+          <a href="https://www.iobit.com/en/advancedsystemcarefree.php" target="_blank">Advanced SystemCare</a>
+          <a href="https://www.huorong.cn/" target="_blank">火绒安全软件</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
