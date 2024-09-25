@@ -5,7 +5,7 @@
 ⚠**支持平台**
 ---
 
-由于苹果和HarmonyOS用户（这里指Higo）可能会对项目作不合理的批评，不了解目前HarmonyOS基于安卓AOSP项目，本项目**不计划提供Apple与HarmonyOS专属软件**。可以确保不被骂的情况下可fork项目。不要发布此类Issue。
+由于HarmonyOS用户（这里指Higo）可能会对项目作不合理的批评，不了解目前HarmonyOS基于安卓AOSP项目，本项目**不计划提供HarmonyOS专属软件**。可以确保不被骂的情况下可fork项目。不要发布此类Issue。如果你可以加入这个功能，我会加入这个网站的iframe的。
 
 **项目简介**
 ---
