@@ -1,20 +1,20 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
+名称: 功能请求
+关于: 为此项目提出一个想法
+标题: ''
+标签: ''
+任务分配对象: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+**您的功能请求是否与问题相关？请描述。**
+对问题所在进行清晰简洁的描述。前任。我总是感到沮丧 [...]
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+**描述您想要的解决方案**
+清晰简洁地描述您希望发生的事情。
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+**描述您考虑过的替代方案**
+对你考虑过的任何替代解决方案或功能的清晰简洁的描述。
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+**附加上下文**
+在此处添加有关功能请求的任何其他上下文或屏幕截图。
